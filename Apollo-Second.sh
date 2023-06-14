@@ -23,11 +23,12 @@ sleep 2
 echo 'Great'
 # Installs essential packages
 pacman -S --noconfirm xorg-server xorg-xinit 
-pacman -S --noconfirm dmenu 
+pacman -S --noconfirm rofi
 pacman -S --noconfirm python-pip
 pacman -S --noconfirm firefox
 pacman -S --noconfirm wget
 pacman -S --noconfirm alacritty 
+pacman -S --noconfirm nitrogen
 pacman -S --noconfirm qtile
 pacman -S --noconfirm dolphin
 pacman -S --noconfirm ttf-inconsolata
