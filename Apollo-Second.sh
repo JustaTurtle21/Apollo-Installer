@@ -34,9 +34,10 @@ pacman -S --noconfirm ttf-inconsolata
 pacman -S --noconfirm htop
 pacman -S --noconfirm polybar
 pacman -S --noconfirm sddm
+systemctl enable sddm
 # Creates .xinitrc
 touch .xinitrc
-# Writes exec i3 in .xinitrc
+# Writes exec qtile in .xinitrc
 echo 'exec qtile' | cat > .xinitrc
 cat .xinitrc
 sleep 3
