@@ -10,7 +10,7 @@ sleep 2
 # The sed -i commands remove the uncomments the line
 sed -i "/en_US.UTF-8 UTF-8/s/^#//g"  /etc/locale.gen
 sed -i "/en_US ISO-8859-1/s/^#//g"  /etc/locale.gen
-locale.gen
+locale-gen
 sleep 2
 echo 'LANG=en_US.UTF-8' >> /etc/locale.conf
 echo 'archbox' >> /etc/hostname
