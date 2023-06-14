@@ -4,7 +4,9 @@ echo 'Starting script'
 echo '################'
 sleep 2
 chmod +x Apollo-Second.sh
-echo 'Press Ctrl+c/V when you want to stop pinging'
+echo '################################################'
+echo 'Press Ctrl+C when you want to stop pinging'
+echo '################################################'
 sleeo 5
 ping archlinux.org
 sleep 2
