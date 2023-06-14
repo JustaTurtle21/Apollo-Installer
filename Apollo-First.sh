@@ -1,5 +1,7 @@
 #!/bin/bash
+echo '################'
 echo 'Starting script'
+echo '################'
 sleep 2
 chmod +x Apollo-Second.sh
 echo 'Press Ctrl+c/V when you want to stop pinging'
@@ -10,7 +12,9 @@ timedatectl set-ntp true
 timedatectl status
 fdisk -l 
 sleep 4
+echo '###################################'
 echo 'Now we are gonna make  partitions'
+echo '###################################'
 sleep 2
 (
 echo m;
@@ -68,6 +72,9 @@ genfstab -U /mnt >> /mnt/etc/fstab
 # Copying the second script to /mnt
 cp -r /root/Apollo-Installer/Apollo-Second.sh /mnt
 sleep 2
+echo '###########################################'
 echo 'After arch-chroot run the second script'
+echo '###########################################'
+
 sleep 4
-arch-chroot /mnt 
+arch-chroot /mnt /bin/bash
