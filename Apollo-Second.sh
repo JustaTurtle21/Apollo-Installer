@@ -20,7 +20,10 @@ passwd justaturtle
 sed -i "/%wheel ALL=(ALL) ALL/s/^#//g" /etc/sudoers
 echo 'Defaults !tty_tickets' > /etc/sudoers
 sleep 2
+echo '########'
 echo 'Great'
+echo '########'
+
 # Installs essential packages
 pacman -S --noconfirm xorg-server xorg-xinit 
 pacman -S --noconfirm rofi
@@ -45,11 +48,13 @@ sleep 3
 # Gets stuff that you might need later on 
 # If you use an amd chip comment the line down
 pacman -S xf86-video-intel
+echo '#################################################################################'
 echo 'Now the script will end but you have to do some things to finish installation
 First : type "exit"
 Second: type "umount -R /mnt"
 Third : type "reboot"
 After reboot type startx'
+echo '#################################################################################'
 sleep 10
 echo 'Bye bye'
 
