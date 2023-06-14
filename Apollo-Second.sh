@@ -47,7 +47,7 @@ echo 'Now the script will end but you have to do some things to finish installat
 First : type "exit"
 Second: type "umount -R /mnt"
 Third : type "reboot"
-Then run the third script'
+After reboot type startx'
 sleep 10
 echo 'Bye bye'
 
