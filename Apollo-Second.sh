@@ -4,6 +4,10 @@ systemctl enable NetworkManager
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 sleep 3
+echo '###########################'
+echo 'You only get one chance'
+echo '###########################'
+sleep 5
 passwd
 sleep 2
 # Generates the locale
