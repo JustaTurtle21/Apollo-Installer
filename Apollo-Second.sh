@@ -37,7 +37,7 @@ pacman -S --noconfirm sddm
 # Creates .xinitrc
 touch .xinitrc
 # Writes exec i3 in .xinitrc
-echo 'exec i3' | cat > .xinitrc
+echo 'exec qtile' | cat > .xinitrc
 cat .xinitrc
 sleep 3
 # Gets stuff that you might need later on 
