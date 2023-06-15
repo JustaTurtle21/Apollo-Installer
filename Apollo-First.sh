@@ -79,4 +79,4 @@ echo 'After arch-chroot run the second script'
 echo '###########################################'
 
 sleep 4
-arch-chroot /mnt /bin/bash
+arch-chroot /mnt ./Apollo-Second.sh
