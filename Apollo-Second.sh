@@ -40,7 +40,6 @@ pacman -S --noconfirm qtile
 pacman -S --noconfirm dolphin
 pacman -S --noconfirm ttf-inconsolata
 pacman -S --noconfirm htop
-pacman -S --noconfirm polybar
 pacman -S --noconfirm sddm
 systemctl enable sddm
 # Creates .xinitrc
