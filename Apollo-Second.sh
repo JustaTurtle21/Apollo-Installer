@@ -8,6 +8,9 @@ echo '###########################'
 echo 'You only get one chance'
 echo '###########################'
 sleep 5
+echo '################'
+echo 'Root Password'
+echo '################'
 passwd
 sleep 2
 # Generates the locale
@@ -20,6 +23,9 @@ echo 'LANG=en_US.UTF-8' >> /etc/locale.conf
 echo 'archbox' >> /etc/hostname
 ln -sf /usr/share/zoneinfo/Asia/Dhaka /etc/localtime
 useradd -mg wheel justaturtle
+echo '################'
+echo 'User Password'
+echo '################'
 passwd justaturtle
 sed -i "/%wheel ALL=(ALL) ALL/s/^#//g" /etc/sudoers
 echo 'Defaults !tty_tickets' > /etc/sudoers
@@ -45,7 +51,7 @@ systemctl enable sddm
 # Creates .xinitrc
 touch .xinitrc
 # Writes exec qtile in .xinitrc
-echo 'exec qtile' | cat > .xinitrc
+echo 'qtile start' | cat > .xinitrc
 cat .xinitrc
 sleep 3
 # Gets stuff that you might need later on 
