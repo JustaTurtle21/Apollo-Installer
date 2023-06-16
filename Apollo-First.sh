@@ -75,7 +75,7 @@ genfstab -U /mnt >> /mnt/etc/fstab
 cp -r /root/Apollo-Installer/Apollo-Second.sh /mnt
 sleep 2
 echo '###########################################'
-echo 'Now the second script will start'
+echo 'Now start the second script after chroot'
 echo '###########################################'
 
 sleep 4
