@@ -1,5 +1,5 @@
 #!/bin/bash
-pacman -Sy networkmanager grub 
+pacman -Sy --noconfirm networkmanager grub 
 systemctl enable NetworkManager
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
@@ -56,7 +56,7 @@ cat .xinitrc
 sleep 3
 # Gets stuff that you might need later on 
 # If you use an amd chip comment the line down
-pacman -S xf86-video-intel
+pacman -S --noconfirm xf86-video-intel
 echo '#################################################################################'
 echo 'Now the script will end but you have to do some things to finish installation
 First : type "exit"
