@@ -27,8 +27,8 @@ echo '################'
 echo 'User Password'
 echo '################'
 passwd justaturtle
-sed -i "/%wheel ALL=(ALL) ALL/s/^#//g" /etc/sudoers
-echo 'Defaults !tty_tickets' > /etc/sudoers
+sed -i "/%wheel ALL=(ALL:ALL) ALL/s/^#//g" /etc/sudoers
+echo 'Defaults !tty_tickets' >> /etc/sudoers
 sleep 2
 echo '########'
 echo 'Great'
