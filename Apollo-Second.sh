@@ -42,7 +42,7 @@ pacman -S --noconfirm firefox
 pacman -S --noconfirm wget
 pacman -S --noconfirm alacritty 
 pacman -S --noconfirm nitrogen
-pacman -S --noconfirm qtile
+pacman -S --noconfirm i3-gaps
 pacman -S --noconfirm dolphin
 pacman -S --noconfirm ttf-inconsolata
 pacman -S --noconfirm htop
@@ -51,7 +51,7 @@ systemctl enable sddm
 # Creates .xinitrc
 touch .xinitrc
 # Writes exec qtile in .xinitrc
-echo 'qtile start' | cat > .xinitrc
+echo 'exec i3' | cat > .xinitrc
 cat .xinitrc
 sleep 3
 # Gets stuff that you might need later on 
